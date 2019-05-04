@@ -1,0 +1,24 @@
+.social
+  &__list 
+    display: flex
+    @extend .list-reset
+  &__item 
+    margin-right: 5px
+  &:last-child 
+    margin-right: 0
+  &__link 
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    box-sizing: border-box
+    width: 48px
+    height: 48px
+    background: $color-blue
+    &:hover,
+    &:focus
+      background-color: $color-blue-accent
+    &:active 
+      background-color: $color-blue-dark
+      & > svg > path
+        fill: #94b9d2

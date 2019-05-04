@@ -1,0 +1,33 @@
+.hero 
+  position: relative
+  display: flex
+  flex-direction: column
+  padding: 73px 73px 80px 73px
+  text-align: center
+  background: url(../img/hero/hero-bg.jpg) no-repeat
+  background-position-y: -55px
+  &:after 
+    content: ''
+    position: absolute
+    right: 0
+    bottom: 0
+    left: 0
+    height: 57px
+    background: url(../img/hero/hero-shape.png) center no-repeat
+  &__title
+    order: 2
+    height: 80px
+    margin: 0
+    margin-bottom: 55px
+    background: url(../img/hero/hero-sedona.png) center no-repeat
+  &__slogan
+    order: 3
+    height: 80px
+    margin: 0
+    background: url(../img/hero/hero-slogan.png) center no-repeat
+  &__subtitle
+    order: 1
+    height: 90px
+    margin: 0
+    margin-bottom: 50px
+    background: url(../img/hero/hero-welcome.png) center no-repeat
