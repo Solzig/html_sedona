@@ -19,7 +19,7 @@ input[type="radio"].visually-hidden
   font: inherit
   font-weight: bold
   font-size: 14px
-  line-height: 21px
+  line-height: 10px
   vertical-align: middle
   text-align: center
   color: #ffffff
@@ -27,6 +27,7 @@ input[type="radio"].visually-hidden
   background-color: $color-blue
   border: none
   cursor: pointer
+  text-decoration: none
   &:hover,
   &:focus
     background-color: $color-blue-accent
@@ -42,11 +43,20 @@ input[type="radio"].visually-hidden
     opacity: 0.5
     & .button__text
         opacity: 0.3
+  &--brown 
+    background-color: #766357
+    &:hover
+      background-color: #604e43
+    &:focus
+    &:active
+      background-color: #503e33
+      & .button__text
+        opacity: 0.3    
   &--form-open
     display: block
     margin: 0
     margin: 0
-    padding: 30px
+    padding: 33px
     font-size: 21px
     text-align: center
     color: #ffffff
@@ -65,4 +75,25 @@ input[type="radio"].visually-hidden
     margin: 0 6px
     padding: 17px
     font-size: 22px
-  
+  &--transparent 
+    display: block
+    margin: 0 auto
+    padding: 6px 35px
+    font-size: 14px
+    line-height: 20px
+    color: #ffffff
+    text-transform: uppercase
+    background: transparent
+    border: 2px solid #ffffff
+    border-radius: 2px
+    outline: none
+    cursor: pointer
+    &:hover 
+      color: #000000
+      background: #ffffff  
+  &--info 
+    height: 10px
+    margin: 0
+  &--booking 
+    height: 10px
+    margin: 0

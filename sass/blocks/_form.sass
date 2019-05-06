@@ -10,10 +10,13 @@
   margin-top: 4px
   &__wrapper
     background-color: #ffffff
-    padding: 50px
+    padding: 50px 50px 57px
     position: absolute
     left: 0
     right: 0
+    display: none
+  &--show
+    display: block
   &__wrapper-button
     margin-top: 28px
   &__item
@@ -45,6 +48,8 @@
     font: inherit
     background-color: $color-grey
     border: 2px solid $color-grey
+    &input[type="text"]
+      font-weight:bold
     &:hover
       border-color: $color-grey-accent
       background-color: $color-grey-accent

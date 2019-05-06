@@ -1,0 +1,67 @@
+.catalog
+  &__list 
+    display: flex
+    flex-direction: column
+    margin: 0
+    padding: 0
+    list-style: none
+  &__item 
+    position: relative
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: flex-start
+    height: 90px
+    padding: 30px 6%
+  &__image 
+    width: 135px
+    height: 90px
+    margin: 0
+    margin-right: 30px
+  &__title 
+    margin: 0
+    margin-bottom: 17px
+    font-size: 21px
+    line-height: 15px
+    text-transform: uppercase
+  &__offer-row 
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    height: 33px
+    &:last-child 
+      display: inline-block
+  &__category 
+    flex-grow: 0
+    min-width: 110px
+    margin-right: 5px
+    font-size: 14px
+    text-transform: uppercase
+    letter-spacing: -1px
+  &__price 
+    flex-grow: 1
+    font-size: 14px
+    text-transform: uppercase
+  &__ranking 
+    width: 110px
+    padding: 5px 0px
+    font-size: 14px
+    text-align: center
+    text-transform: uppercase
+    background: #f2f2f2
+  &__ranking-number 
+    margin-left: 3px
+  &__item:before 
+    content: ''
+    position: absolute
+    right: 0
+    bottom: 0
+    left: 0
+    height: 1px
+    background: #cacaca   
+  &__star 
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 90px   
+    margin-left: auto

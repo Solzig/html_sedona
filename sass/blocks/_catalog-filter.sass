@@ -1,0 +1,95 @@
+.filters
+  &__wrapper
+    background-image: url(../img/catalog-bg.jpg)
+    background-position: 100% 50%
+    padding: 27px 6% 33px
+    background-size: cover
+
+.filter    
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: flex-start
+  fieldset
+    margin: 0
+    padding: 0
+    border: none
+    width: 100%
+    max-width: 255px
+    &:last-child
+      margin-left: auto
+      max-width: 318px
+  legend
+    margin-bottom: 26px
+    line-height: 21px
+    text-transform: uppercase
+    font-size: 16px
+    font-weight: bold
+    color: #ffffff
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    line-height: 18px
+
+.filter-option
+  margin-bottom: 28px
+  padding-left: 39px
+  &:last-child
+    margin-bottom: 0px
+  label
+    position: relative
+    display: block
+    cursor: pointer
+    user-select: none
+    font-size: 14px
+    text-transform: uppercase
+    color: #ffffff
+
+
+.filter-input-checkbox
+  &:hover + label, &:focus + label
+    color: #663d15
+  + label::before
+    content: ""
+    position: absolute
+    top: -2px
+    left: -38px
+    width: 24px
+    height: 25px
+    border: transparent
+    background-image: url(../img/icon/checkbox-off.svg)
+    background-repeat: no-repeat
+    background-position: 0 0
+  &:checked + label::before
+    content: ""
+    position: absolute
+    top: -2px
+    left: -38px
+    width: 24px
+    height: 24px
+    background-image: url("../img/icon/checkbox-on.svg")
+    background-repeat: no-repeat
+    background-position: 0 0
+
+.filter-input
+  &:hover + label
+    color: #ffffff
+  &:focus + label
+    color: #ffffff
+  &:disabled + label, &:checked:disabled + label
+    color: #ffffff
+    opacity: 0.5
+    pointer-events: none
+  &:disabled
+    &:hover + label, &:focus + label
+      color: #ffffff
+      opacity: 0.5
+      pointer-events: none
+
+.filter-button
+  padding-right: 30px
+  padding-left: 30px
+
+.catalog-filter__heading--range
+  margin-bottom: 10px !important

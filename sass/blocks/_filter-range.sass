@@ -1,0 +1,81 @@
+.filter
+  &__range 
+    color: #ffffff
+    text-transform: uppercase
+    max-width: 318px
+    width: 100%
+
+.price
+  &__controls 
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    position: relative
+    height: 32px
+    margin-bottom: 20px
+    font-size: 0
+    border: 2px solid #ffffff
+    border-radius: 2px
+    &-block
+      max-width: 155px
+      width: 100%
+      position: relative
+    &::after 
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 2px
+      height: 22px
+      background: #ffffff
+      transform: translate(-50%, -50%)
+  &__label 
+    display: inline-block
+    font-size: 14px
+    line-height: 30px
+    vertical-align: top
+    cursor: pointer
+  &__min-price,
+  &__max-price 
+    width: 90px
+    position: absolute
+  &__min-price
+    left: 35%
+  &__max-price 
+    left: 35%
+  &__input 
+    width: 50px
+    margin: 0
+    color: inherit
+    font: inherit
+    background: none
+    border: none
+    outline: none
+
+.range
+  &__controls 
+    position: relative
+    margin-bottom: 32px
+  &__scale 
+    height: 2px
+    background: rgba(255, 255, 255, 0.3)
+  &__bar 
+    width: 80%
+    height: 2px
+    background: #ffffff
+  &__toggle 
+    position: absolute
+    top: -9px
+    width: 4px
+    height: 4px
+    background: #ababab
+    border: 8px solid #ffffff
+    border-radius: 50%
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2)
+    cursor: pointer
+    &:hover 
+      background: #1c4f80
+    &-min 
+      left: 0
+    &-max 
+      left: 80%
