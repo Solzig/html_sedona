@@ -1,0 +1,87 @@
+.sorting
+  &__wrapper 
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 28px 6%
+    justify-content: flex-start
+    position: relative
+    &:before 
+      position: absolute
+      content: ''
+      bottom: 0
+      left: 0
+      right: 0
+      height: 1px
+      background: #cacaca
+  &__list 
+    margin: 0
+    list-style: none
+    padding: 0
+    display: flex
+    margin-left: 40px
+  &__result 
+    font-size: 20px
+    font-weight: bold
+    text-transform: uppercase
+    line-height: 31px
+    letter-spacing: 0.8px
+  &__number 
+    margin-left: 3px
+  &__list-title 
+    margin-left: 48px
+    text-transform: uppercase
+    font-size: 12px
+    line-height: 31px
+  &__type 
+    margin-right: 33px
+    position: relative
+    &--curret > a 
+      color: #81b3d2
+    &--curret > :before 
+      display: none  
+  &__link 
+    color: inherit
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 12px
+    line-height: 31px
+    color: #cacaca
+    &:hover
+      color: $color-blue
+    &:focus  
+    &:active
+      color: #000000
+      &:before
+        display: none
+    &:before 
+      position: absolute
+      content: ''
+      height: 1px
+      left: 0
+      right: 0
+      bottom: 7px
+      border-bottom: 1px dashed #81b3d2
+  &__way 
+    margin: 0
+    padding: 0
+    list-style: none
+    display: flex
+    flex-direction: row
+    margin-left: auto
+  &__way-item 
+    margin-right: 10px
+    &:last-child 
+      margin-right: 0
+    &--curret 
+      & .sorting__way-link > svg > path
+        fill: $color-blue    
+  &__way-link  
+    & > svg > path
+      fill: #cacaca
+    &:active
+      & > svg > path
+        fill: $color-blue  
+    &:hover
+      & > svg > path
+        fill: #000000

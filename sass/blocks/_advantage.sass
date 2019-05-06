@@ -1,0 +1,105 @@
+.advantages
+  &__wrapper
+    margin-top: 60px
+  &__title
+    max-width: 600px
+    margin: 0 auto
+    margin-bottom: 34px
+    text-align: center
+    text-transform: uppercase
+  &__subtitle 
+    margin: 0 auto
+    margin-bottom: 55px
+    text-align: center
+    text-transform: uppercase
+
+.advantage
+  &__list
+    display: flex
+    flex-wrap: wrap
+    @extend .list-reset
+  &__wrapper 
+    display: flex
+    flex-direction: column
+    width: 100%
+    max-width: 400px
+    padding: 22px 0px 32px
+    text-align: center
+    &--image
+      max-width: 33.333%
+    &--grey
+      max-height: 145px
+      padding-top: 47px
+      padding-bottom: 62px
+  &__item 
+    width: 33.333%
+    display: flex
+    align-items: center
+    &--image-left,
+    &--image-right 
+      display: flex
+      width: 100%
+      min-height: 256px
+      color: #ffffff
+      background-color: $color-blue
+      background-repeat: no-repeat
+      background-size: calc(100% - 33.3%)
+    &--image-left
+      flex-direction: row-reverse
+      background-position: 0% 50%
+    &--image-right     
+      flex-direction: row
+      background-position: 100% 50%
+    &--icon 
+      min-height: 217px
+      padding: 100px 0 14px
+      background: 50% 61px no-repeat
+    &--grey
+      background-color: #eeeeee
+
+  &__title
+    margin: 0 auto
+    margin-bottom: 23px
+    font-size: 21.5px
+    line-height: 20px
+    text-align: center
+    text-transform: uppercase
+  &__subtitle
+    position: relative
+    margin: 0 auto
+    margin-bottom: 28px
+    font-size: 14px
+    top: 4px
+    width: 23px
+    &::before 
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 9px
+      left: -12px
+      height: 2px
+      content: ""
+      background-color: #ffffff
+    &::after
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: -12px
+      width: 9px
+      height: 2px
+      content: ""
+      background-color: #ffffff
+  &__description 
+    max-width: 75%
+    line-height: 20px
+    margin: 0 auto
+    text-align: center
+    text-transform: uppercase
+    width: 100%
+    &--grey
+      max-width: 65%
+      width: 100%
+
+.advantage__wrapper--grey > *:before,
+.advantage__wrapper--grey > *:after 
+  background-color: #000000      

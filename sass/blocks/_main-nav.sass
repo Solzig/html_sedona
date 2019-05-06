@@ -1,0 +1,47 @@
+.main-nav 
+  height: 56px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  &__list 
+    display: flex
+    @extend .list-reset
+    align-items: center
+    width: calc(100% - 200px)
+    max-width: 465px
+    &--left
+      order: 1
+      text-align: left
+    &--right 
+      order: 3
+      text-align: right
+
+.site-list
+  &__item 
+    display: flex
+    flex-grow: 1
+    justify-content: center   
+    width: 20%  
+  &__link 
+    line-height: 26px
+    font-size: 14px
+    @extend .link-reset
+    color: #000000
+    font-weight: bold
+    &:hover
+      color: $color-blue
+    &:focus,
+    &:active   
+      opacity: 0.3
+    &--curret  
+      color: #766357
+
+
+.page-header 
+  display: flex
+  justify-content: center
+  &__logo-wrapper
+    order: 2
+    margin: 0 60px
+    flex-grow: 1
+    z-index: 9
